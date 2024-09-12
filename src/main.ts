@@ -2,6 +2,11 @@ import './style.css'
 import './temas-ts/01-tipos-bas.ts'
 import './temas-ts/02-interfaz-arre.ts'
 import './temas-ts/03-funciones.ts'
+import './temas-ts/04-desestructuracion-obj-arre.ts'
+import './temas-ts/05-desestructura-funciones.ts'
+import './temas-ts/06-import-export.ts'
+import './temas-ts/07-clase.ts'
+
 
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
