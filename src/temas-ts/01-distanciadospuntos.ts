@@ -1,22 +1,19 @@
-interface puntos{
+
+export class Punto {
     x: number;
     y: number;
-}
-class Punto{
-    x: number;
-    y: number;
-    constructor(x:number,y:number){
-        this.x = x;
-        this.y = y;
+  
+    constructor(x: number, y: number) {
+      this.x = x;
+      this.y = y;
     }
-}
-const punto1 = new Punto(1,2)
-const punto2 = new Punto(4,6)
+    
+    calcularDistancia(otroPunto: Punto): number {
+      const distancia = Math.sqrt(Math.pow(otroPunto.x - this.x, 2) + Math.pow(otroPunto.y - this.y, 2));
+      return distancia;
+    }
+  }
+const punto1 = new Punto(0, 0);
+const punto2 = new Punto(3, 0);
 
-function calcularDistancia(a:puntos, b:puntos){
-    const distancia = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
-
-   console.log(`La distancia entre (${a.x},${a.y}) y (${b.x},${b.y}) es: ${distancia}`)
-}
-
-calcularDistancia(punto1, punto2)
+console.log('Distancia punto 1 y 2: '+punto2.calcularDistancia(punto1))
